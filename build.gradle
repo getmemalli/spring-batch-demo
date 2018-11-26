@@ -30,5 +30,7 @@ dependencies {
     compile("org.hsqldb:hsqldb")
     compile "org.apache.commons:commons-dbcp2:2.5.0"
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.12'
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
+
     testCompile("junit:junit")
 }

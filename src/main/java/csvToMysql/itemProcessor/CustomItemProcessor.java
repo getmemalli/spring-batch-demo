@@ -1,6 +1,6 @@
 package csvToMysql.itemProcessor;
 
-import csvToMysql.Person;
+import csvToMysql.domain.Person;
 import org.springframework.batch.item.ItemProcessor;
 
 public class CustomItemProcessor implements ItemProcessor<Person, Person> {

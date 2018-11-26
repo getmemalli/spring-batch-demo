@@ -1,6 +1,6 @@
 package csvToMysql.domain;
 
-import csvToMysql.Person;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.FieldSet;
 
