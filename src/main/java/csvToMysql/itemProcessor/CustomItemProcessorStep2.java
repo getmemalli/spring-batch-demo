@@ -10,7 +10,7 @@ public class CustomItemProcessorStep2 implements ItemProcessor<Person, Person> {
 
     public Person process(Person person) throws Exception {
 
-        if(person.getRowNumber().equalsIgnoreCase( "4")){
+        if(person.getRowNumber().equalsIgnoreCase( "2")){
             throw new Exception();
         }
         person.setStatus(Constants.PROCESSED);

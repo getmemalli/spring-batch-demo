@@ -12,8 +12,8 @@
 
     <import resource = "context-base.xml" />
 
-    <batch:job id = "csvToMysqlJob">
-        <batch:step id = "step1" next="step2">
+    <batch:job id = "csvToMysqlJob" restartable="true">
+        <batch:step id = "step1" next="step2" allow-start-if-complete="false">
             <batch:tasklet>
                 <batch:chunk reader = "csvFileItemReader" writer = "mysqlItemWriter"
                              processor = "itemProcessor" commit-interval = "10">
