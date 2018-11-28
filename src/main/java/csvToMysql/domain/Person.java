@@ -17,6 +17,7 @@ public class Person {
     private String lastName;
     private String firstName;
     private String status;
+    private String data;
 
     public Person() {
     }
@@ -57,6 +58,14 @@ public class Person {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
     }
 
     @Override

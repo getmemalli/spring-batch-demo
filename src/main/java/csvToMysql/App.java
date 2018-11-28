@@ -32,7 +32,7 @@ public class App {
 
     public static JobParameters getJobParameters() {
         JobParametersBuilder jobParametersBuilder = new JobParametersBuilder();
-        jobParametersBuilder.addString("jobId", "test4");
+        jobParametersBuilder.addString("jobId", "test2");
         return jobParametersBuilder.toJobParameters();
     }
 }

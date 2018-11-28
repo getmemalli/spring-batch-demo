@@ -75,7 +75,7 @@
         <property name = "dataSource" ref = "dataSource" />
         <property name = "sql">
             <value>
-                <![CDATA[update batch_demo.person set  status = :status where person_id= :rowNumber;]]>
+                <![CDATA[update batch_demo.person set  status = :status, data = :data where person_id= :rowNumber;]]>
             </value>
         </property>
 

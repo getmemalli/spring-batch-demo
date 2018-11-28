@@ -31,6 +31,7 @@
     </bean>
 
     <!-- create job-meta tables automatically -->
+    <!-- comment the below 4 lines after first run. It will recreate tables -->
     <jdbc:initialize-database data-source = "dataSource">
         <jdbc:script location = "org/springframework/batch/core/schema-drop-mysql.sql"/>
         <jdbc:script location = "org/springframework/batch/core/schema-mysql.sql"/>

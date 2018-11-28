@@ -6,5 +6,6 @@ CREATE TABLE `person` (
   `first_name` varchar(20) DEFAULT NULL,
   `last_name` varchar(20) DEFAULT NULL,
   `status` varchar(20) DEFAULT 'UNPROCESSED',
+  `data` JSON DEFAULT NULL,
   PRIMARY KEY (`person_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
